@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 767px) {
+  .card-wrapper {
+    display: flex;
+    margin: 3% 15%;
+  }
+  .card {
+    margin: 0.5rem;
+    width: calc(100% / 3);
+  }
+
+  .card-body {
+    height: 80vh;
+    background-color: #1188c1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .card h3 {
+    color: #ffffff;
+    padding: 15px 0 10px 10px;
+  }
+
+  .card h5 {
+    color: #ffffff;
+    padding: 7px 0 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+  }
+  .card .row {
+    height: 70px;
+    width: 90%;
+    margin: auto;
+  }
+  .inner-row {
+    border: 1px solid #359acb;
+    align-items: flex-end;
+  }
+
+  .carousel-item {
+    transition: transform 1s ease-in-out; /* Transition for smoother sliding */
+  }
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right,
+  .carousel-item.active {
+    transition: transform 1s ease-in-out; /* Transition for smoother sliding */
+  }
+
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translateX(100%); /* Slide out to the right */
+  }
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translateX(-100%); /* Slide out to the left */
+  }
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right,
+  .carousel-item.active {
+    transform: translateX(0); /* Slide in */
+  }
+}
+
+/* small screen media quaries */
+
+@media screen and (max-width: 767px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+
+  .card {
+    margin: 0.5rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .card-body {
+    height: 80vh;
+    background-color: #1188c1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .card h3 {
+    color: #ffffff;
+    padding: 15px 0 10px 10px;
+  }
+
+  .card h5 {
+    color: #ffffff;
+    padding: 7px 0 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 0 0 10px;
+  }
+  .card .row {
+    height: 70px;
+    width: 90%;
+    margin: auto;
+  }
+  .inner-row {
+    border: 1px solid #359acb;
+    align-items: flex-end;
+  }
+
+  .carousel-item {
+    transition: transform 1s ease-in-out; /* Transition for smoother sliding */
+  }
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right,
+  .carousel-item.active {
+    transition: transform 1s ease-in-out; /* Transition for smoother sliding */
+  }
+
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translateX(100%); /* Slide out to the right */
+  }
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translateX(-100%); /* Slide out to the left */
+  }
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right,
+  .carousel-item.active {
+    transform: translateX(0); /* Slide in */
+  }
+}
